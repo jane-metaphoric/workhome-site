@@ -1,0 +1,16 @@
+
+      function isVal(){
+        var str=document.getElementById('name-area').value;
+        var status=document.getElementById('status');
+        var re=/^\w+@\w+\.\w{2,4}$/i;
+        if (re.test(str)) status.innerHTML='Адрес правильный';
+         else status.innerHTML="Адрес неверный";
+         if (str.length==0 || str==null) status.innerHTML="Поле пустое"; 
+
+        var fun=document.getElementById('email-area').value;
+        var sic=document.getElementById('sic');
+        var er=/^[a-zA-Z]{3,}$/;
+        if (er.test(fun)) sic.innerHTML='Верное имя';
+        else sic.innerHTML="НЕ верное имя";
+        if (fun.length==0 || fun==null) sic.innerHTML="Поле пустое";
+       }

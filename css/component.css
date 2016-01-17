@@ -1,0 +1,285 @@
+.cbp-fwslider {
+	position: relative;
+	margin: 0 0 10px;
+	overflow: hidden;
+	padding: 40px 0 60px;
+}
+
+.cbp-fwslider ul {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	list-style-type: none;
+}
+
+.cbp-fwslider ul li {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.cbp-fwslider ul li > a,
+.cbp-fwslider ul li > div {
+	display: block;
+	text-align: center;
+	outline: none;
+}
+
+.cbp-fwslider ul li > a img {
+	border: none;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.cbp-fwslider nav span {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 100px;
+	background: #47a3da;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	margin-top: -50px;
+	line-height: 100px;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+.cbp-fwslider nav span:hover {
+	background: #378fc3;
+}
+
+.cbp-fwslider nav span.cbp-fwnext {
+
+	display:none;
+}
+
+.cbp-fwslider nav span.cbp-fwprev {
+
+	display:none!important;
+}
+
+.cbp-fwdots {
+	position: absolute;
+
+	white-space: nowrap;
+	text-align: center;
+	width: 100%;
+}
+
+.cbp-fwdots span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #ddd;
+	margin: 4px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.cbp-fwdots span:hover {
+	background: #999;
+}
+
+.cbp-fwdots span.cbp-fwcurrent {
+    background: #fff;
+}
+/*.cbp-fwdots {
+    bottom: 16%!important;
+    }*/
+.slide-fwslider {
+	position: relative;
+	margin: 0 0 10px;
+	overflow: hidden;
+}
+
+.slide-fwslider ul {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	list-style-type: none;
+}
+
+.slide-fwslider ul li {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.slide-fwslider ul li > a,
+.slide-fwslider ul li > div {
+	display: block;
+	text-align: center;
+	outline: none;
+}
+
+.slide-fwslider ul li > a img {
+	border: none;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.slide-fwslider nav span {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 100px;
+	background: #47a3da;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	margin-top: -50px;
+	line-height: 100px;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+.slide-fwslider nav span:hover {
+	background: #378fc3;
+}
+
+.slide-fwslider nav span.cbp-fwnext {
+
+	display:none;
+}
+
+.slide-fwslider nav span.cbp-fwprev {
+
+	display:none!important;
+}
+
+.slide-fwslider {
+    position: relative;
+	bottom: 0px;
+	white-space: nowrap;
+	text-align: center;
+	width: 100%;
+}
+
+.slide-fwslider span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #ddd;
+	margin: 4px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slide-fwslider span:hover {
+	background: #999;
+}
+
+.slide-fwslider span.cbp-fwcurrent {
+    background: #fff;
+}
+.slide-fwslider {
+    bottom: 16%!important;
+    }
+.slide-third ul {
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+	list-style-type: none;
+}
+
+.slide-third ul li {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.slide-third ul li > a,
+.slide-third ul li > div {
+	display: block;
+	text-align: center;
+	outline: none;
+}
+
+.slide-third ul li > a img {
+	border: none;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.slide-third nav span {
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 100px;
+	background: #47a3da;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	margin-top: -50px;
+	line-height: 100px;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+.slide-third nav span:hover {
+	background: #378fc3;
+}
+
+.slide-thirdnav span.cbp-fwnext {
+
+	display:none;
+}
+
+.slide-third nav span.cbp-fwprev {
+
+	display:none!important;
+}
+
+.slide-third {
+    position: relative;
+	bottom: 0px;
+	white-space: nowrap;
+	text-align: center;
+	width: 100%;
+}
+
+.slide-third span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #ddd;
+	margin: 4px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slide-third span:hover {
+	background: #999;
+}
+
+.slide-third span.cbp-fwcurrent {
+    background: #fff;
+}
+.slide-third {
+    bottom: 16%!important;
+    }
+
+.slider-wrapper3{
+    display: block;
+    height: 580px;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+}

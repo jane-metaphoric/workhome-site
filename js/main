@@ -1,0 +1,113 @@
+
+        // анимация для блока скиллс
+  $(document).ready(function(){
+        $('.skills').viewportChecker({
+        classToAdd: 'line_yellow1',
+        callbackFunction: function(elem, action){
+                    setInterval(updateTimer = function() {
+                    var cell1 = document.getElementById('cell1');
+                    var count1 = Number(cell1.innerHTML);
+                    if (count1 <  86 ) cell1.innerHTML = count1 += 1;
+                    if($(this).hasClass('line_yellow1'))  cell1.innerHTML = count1 == 0;
+                    }, 25);
+                    },
+        repeat: true
+        });
+        $('.skills').viewportChecker({
+        classToAdd: 'line_yellow2',
+        callbackFunction: function(elem, action){
+                    setInterval(updateTimer = function() {
+                    var cell2 = document.getElementById('cell2');
+                    var count2 = Number(cell2.innerHTML);
+                    if (count2 <  76 ) cell2.innerHTML = count2 += 1;
+                    }, 25);
+                    },
+        repeat: true
+        });
+        $('.skills').viewportChecker({
+        classToAdd: 'line_yellow3',
+        callbackFunction: function(elem, action){
+                    setInterval(updateTimer = function() {
+                    var cell3 = document.getElementById('cell3');
+                    var count3 = Number(cell3.innerHTML);
+                    if (count3 <  81 ) cell3.innerHTML = count3 += 1;
+                    }, 25);
+                    },
+        repeat: true
+        });
+        $('.skills').viewportChecker({
+        classToAdd: 'line_yellow4',
+        callbackFunction: function(elem, action){
+                    setInterval(updateTimer = function() {
+                    var cell4 = document.getElementById('cell4');
+                    var count4 = Number(cell4.innerHTML);
+                    if (count4 <  71 ) cell4.innerHTML = count4 += 1;
+                    }, 25);
+                    },
+        repeat: true
+        });
+    });
+
+        $( function() {
+            // настройки для слайдера1
+            $( '#cbp-fwslider' ).cbpFWSlider(); 
+            // настройки для слайдера2
+            $( '#slide-fwslider' ).cbpFWSlider(); 
+            // настройки для порфолио
+            $(".fancybox").fancybox({
+            transitionIn: 'fade'
+            }); 
+            // настройки для слайдера3
+            $('.third').flexslider({
+            animation: "slide"               
+         });
+
+        // настройки для карусели
+        $('.clients-items').flexslider({  
+            animation: "slide",
+            minItems: 1,
+            maxItems: 4
+
+            });
+         });
+
+
+        $(document).ready(function(){
+            $('.mobile').click(function(){
+            $('.cat-list').slideToggle();
+            });
+              $(".works-sub_1").click(function () {
+                $(".submenu-1").slideToggle();
+            });
+        });
+
+        // настройки для счетчика
+        $(function () {
+          var austDay = new Date();
+          austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+          $('#defaultCountdown').countdown({until: austDay});
+          $('#year').text(austDay.getFullYear());
+        });
+
+        // валидация полей
+        function isVal(){
+        var email=document.getElementById('email-area').value;
+        var status_email=document.getElementById('status_email');
+        var re=/^\w+@\w+\.\w{2,4}$/i;
+        if (re.test(email)) status_email.innerHTML="";
+        else status_email.innerHTML="Адрес указан не верно";
+
+        if (email.length==0 || email==null) status_email.innerHTML="Поле не заполнено"; 
+
+
+
+        var name = document.getElementById('name-area').value;
+        var status_name=document.getElementById('status_name');
+        var er=/^[a-zA-Z]{3,}$/;
+        if (er.test(name)) status_name.innerHTML="";
+        else status_name.innerHTML="Имя должно быть не менее трех символов";
+
+        if (name.length === 0 || name == null) status_name.innerHTML="Поле не заполнено";
+        }
+
+    
